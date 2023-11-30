@@ -23,7 +23,7 @@ const Users = () => {
 // appi çekme stili
 
 export const usersLoader = async () => {
-  const res = await fetch("http://jsonplaceholder.typicode.com/user");
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
   if(res.status ===404){
     throw new Response("kaynak bulunamadı." , {status:404})
   }
